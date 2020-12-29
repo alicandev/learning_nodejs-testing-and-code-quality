@@ -19,7 +19,7 @@ describe('Reservation Schema', () => {
     });
   });
 
-  // Writing asynchronouse test
+  // Writing asynchronouse test with callbacks
   context('Validator', () => {
     it('should pass a valid reservation with no optional fields', (done) => {
       const reservation = new Reservation({
@@ -43,7 +43,6 @@ describe('Reservation Schema', () => {
         name: 'Family',
         email: 'username'
       });
-
       reservation.validator((error, value) => {
         reservation.validator((error) => {
           error.should

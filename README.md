@@ -23,6 +23,19 @@ The server persists using a SQLite3 database named `database.sqlite` in the site
 
 ## Development
 
+### Testing
+This project uses Mocha and Chai for testing.
+Visit http://mochajs.org and http://chaijs.com for details.
+
+To execute tests:
+```bash
+npm test
+```
+or
+```bash
+yarn test
+```
+
 ### Debugging
 
 This project uses https://www.npmjs.com/package/debug for development logging. To start `nodemon` and enable logging:
